@@ -33,7 +33,10 @@ def normalize(input_string):
              >>> tp.normalize(input_string2)
              'extra space'
     """
-    normalized_string = None
+    string_progress = input_string.lower()
+    string_progress.strip()   
+    string_split = string_progress.split()
+    normalized_string = ' '.join(string_split)
     return normalized_string
 
 
@@ -58,5 +61,13 @@ def no_vowels(input_string):
             >>> tp.normalize(input_string2)
             ''W lv Pythn!'
     """
-    no_vowel_string = None
+    string_progress = input_string
+    string_progress 
+    moeum = ['a', 'e', 'i', 'o', 'u','A','E','I','O','U']
+    
+    for i in moeum:
+        if i not in string_progress: continue
+        string_progress = string_progress.replace(i,'')
+
+    no_vowel_string = string_progress 
     return no_vowel_string
